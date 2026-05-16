@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Matrix</title>
+    <style>
+      .redPill {
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(114, 17, 17);
+        border: none;
+      } 
+
+      .bluePill {
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(20, 20, 89);
+        border: none;
+      }
+
+      @font-face {
+        font-family: 'MatrixCode';
+        src: url('matrixcodenfi.ttf'); 
+      }
+
+      .request {
+        font-family: MatrixCode, monospace;
+        color: #00ff00;
+        font-size: 24px;
+      }
+
+      .handspng {
+        height: 100px;
+        width: 100px;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <p class="request">
+      Choose: 
+      the Red Pill to leave the Matrix
+      or
+      the Blue Pill to stay in the Matrix
+    </p>
+
+    <div style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 70vh;
+    ">
+      <button class="redPill" onclick="alert('You just left the Matrix, welcome to the Real world!');"></button>
+      <button class="bluePill" onclick="alert('You missed a great opportunity, have a nice day.');"></button>
+    </div>
+
+    <script>
+      document.body.style.backgroundColor = "black";  
+      document.body.style.backgroundImage = "url('hands.png')";  
+      document.body.style.backgroundSize = "675px 675px";
+      document.body.style.backgroundPosition = "center"; 
+      document.body.style.backgroundRepeat = "no-repeat";  
+    </script>
+
+  </body>
+
+</html>
